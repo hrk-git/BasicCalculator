@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+    
+    .container{
+    border: 2px solid black;
+   
+   width: 600px;
+   
+   border-radius:20px ;
+   background-color:skyblue;
+   display:flex;
+   flex-direction:column;  
+    }
+       
+    .userinput{
+    display: flex;
+    margin-left:60px ;
+    margin-top:30px ;
+  }
+  
+  
+    #enteredvalue{
+    
+    width: 450px;
+    height: 70px;
+    font-size:50px;
+    border: 5px solid black;
+    
+    
+    }
+    .keypad{
+     border: 5px solid black;
+     font-size:50px;
+      margin:40px;
+       background-color:yellow;
+      
+    
+    }
+    .numberkeys{
+    
+    }
+    .keypad1{
+     display:flex;
+     
+    }
+    .operatorkeypad{
+    display:flex;
+     flex-direction:column;
+     float:left;
+    
+    }
+   
+    .button{
+      font-size:50px;
+    width: 50px;
+    height: 60px;
+    border: 5px solid black;
+     margin:10px;
+     float:left;
+     text-align:center;
+      background-color:white;
+       border-radius:5px ;
+    
+    }
+    #equalto{
+     width: 100px;
+      background-color:pink;
+    }
+    .button:hover{
+    color:white;
+    background-color:black;
+    }
+       
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="userinput">
+<input type="text" id="enteredvalue">
+</div>
+
+<div class="keypad">
+
+<div class="keypad1">
+<div class="button" id="one" onclick="document.getElementById('enteredvalue').value=1">
+1
+</div>
+<div class="button" id="two" onclick="document.getElementById('enteredvalue').value=2" >
+2
+</div>
+<div class="button" id="three" onclick="document.getElementById('enteredvalue').value=3">
+3
+</div>
+</div>
+
+<div class="keypad1" >
+<div class="button" id="four" onclick="document.getElementById('enteredvalue').value=4">
+4
+</div>
+<div class="button" id="five" onclick="document.getElementById('enteredvalue').value=5">
+5
+</div>
+<div class="button" id="six" onclick="document.getElementById('enteredvalue').value=6">
+6
+</div>
+</div>
+
+<div class="keypad1">
+<div class="button" id="seven" onclick="document.getElementById('enteredvalue').value=7">
+7
+</div>
+<div class="button" id="eight" onclick="document.getElementById('enteredvalue').value=8">
+8
+</div>
+<div class="button" id="nine" onclick="document.getElementById('enteredvalue').value=9">
+9
+</div>
+</div>
+
+
+
+
+<div class="keypad1">
+<div class="button" id="multiply">
+*
+</div>
+<div class="button" id="divide">
+/
+</div>
+<div class="button" id="add">
++
+</div>
+<div class="button" id="subtract">
+-
+</div>
+<div class="button" id="equalto">
+=
+</div>
+</div>
+
+</div>
+<script>
+
+
+</script>
+
+  
+     
+</body>
+</html>
